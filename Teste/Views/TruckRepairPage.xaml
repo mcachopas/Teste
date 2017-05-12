@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teste.Views.TruckRepairPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Manutenção" Clicked="NewTruckRepair_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView
+                      x:Name="TruckRepairListView"
+                      ItemsSource="{Binding TruckRepair}"
+                      HasUnevenRows="True"
+                      IsPullToRefreshEnabled="True"
+                      CachingStrategy="RecycleElement"
+                      ItemSelected="OnTruckRepairSelected"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnEdit" CommandParameter="{Binding .}" Text="Edit"/>
+                                <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" Text="Delete"/>
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Date}"
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListTruckTextStyle}"
+                                       FontSize="Large"/>
+                                <Label Text="{Binding KM}"
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListTruckTextStyle}"
+                                       FontSize="Small"
+                                       FontAttributes="Bold"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

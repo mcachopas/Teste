@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teste.Views.NewDriverPage"
+             Title="New Driver">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Name" Style="{StaticResource Label1}"/>
+                    <Entry Text="{Binding Driver.Name}"  FontSize="Small" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Surname" Style="{StaticResource Label1}"/>
+                    <Entry Text="{Binding Driver.Surname}" FontSize="Small" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="BirthYear" Style="{StaticResource Label1}"/>
+                    <DatePicker Date="{Binding Driver.BirthYear}" Style="{StaticResource Date1}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Document" Style="{StaticResource Label1}"/>
+                    <Entry Text="{Binding Driver.Document}" FontSize="Small" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Expiration" Style="{StaticResource Label1}"/>
+                    <DatePicker Date="{Binding Driver.Expiration}" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Adress" Style="{StaticResource Label1}"/>
+                    <Entry Text="{Binding Driver.Adress}" FontSize="Small" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Phone" Style="{StaticResource Label1}"/>
+                    <Entry Text="{Binding Driver.Phone}" Keyboard="Telephone"  FontSize="Small" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+    

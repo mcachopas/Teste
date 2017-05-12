@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teste.Views.NewTruckPage"
+             Title="New Truck">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Marca" FontSize="Small" />
+                    <Entry Text="{Binding Truck.Brand}" FontSize="Small" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Modelo" FontSize="Small" />
+                    <Editor Text="{Binding Truck.Model}" FontSize="Small" Margin="0" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Motor" FontSize="Small" />
+                    <Entry Text="{Binding Truck.Motor}" FontSize="Small" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ano" FontSize="Small" />
+                    <Entry Text="{Binding Truck.Year}" FontSize="Small" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tipo de Combustivel" FontSize="Small" />
+                    <Entry Text="{Binding Truck.FuelType}" FontSize="Small" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tipo de Oleo" FontSize="Small" />
+                    <Entry Text="{Binding Truck.OilType}" FontSize="Small" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView> 
+    </ContentPage.Content>
+</ContentPage>

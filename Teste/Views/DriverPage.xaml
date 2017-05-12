@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teste.Views.DriverPage"
+             Title="{Binding Title}"
+             x:Name="BroweseTrucksPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Driver" Clicked="NewDriver_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView
+                      x:Name="DriverListView"
+                      ItemsSource="{Binding Drivers}"
+                      HasUnevenRows="True"
+                      RefreshCommand="{Binding LoadDriversCommand}"
+                      IsPullToRefreshEnabled="True"
+                      CachingStrategy="RecycleElement"
+                      ItemSelected="OnDriverSelected"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnEdit" CommandParameter="{Binding .}" Text="Edit"/>
+                                <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" Text="Delete"/>
+                            </ViewCell.ContextActions>
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}"
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListTruckTextStyle}"
+                                       FontSize="Medium"/>
+                                    <Label Text="{Binding Surname}"
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListTruckTextStyle}"
+                                       FontSize="Medium"/>
+                                </StackLayout>
+                                <Label Text="{Binding Phone}"
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListTruckTextStyle}"
+                                       FontSize="Small"
+                                       FontAttributes="Bold"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

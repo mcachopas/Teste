@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teste.Views.TruckRepairDetailPage">
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="{Binding TruckRepair.Date}" FontSize="Large"/>
+        <Label Text="{Binding TruckRepair.KM}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.Price}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.OilFilter}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.DieselFilter}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.AirFilter}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.MotorFilter}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.Breaks}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.Repairs}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.TiresCondition}" FontSize="Small"/>
+        <Label Text="{Binding TruckRepair.Obs}" FontSize="Small"/>
+    </StackLayout>
+</ContentPage>
