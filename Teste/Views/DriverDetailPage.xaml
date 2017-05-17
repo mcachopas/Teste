@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Teste.Views.DriverDetailPage">
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="{Binding Driver.Name}" FontSize="Large"/>
-        <Label Text="{Binding Driver.Surname}" FontSize="Small"/>
-        <Label Text="{Binding Driver.BirthYear}" FontSize="Small"/>
-        <Label Text="{Binding Driver.Document}" FontSize="Small"/>
-        <Label Text="{Binding Driver.Expiration}" FontSize="Small"/>
-        <Label Text="{Binding Driver.Adress}" FontSize="Small"/>
-        <Label Text="{Binding Driver.Phone}" FontSize="Small"/>
+        <Label Text="{Binding Driver.Name}" Style="{StaticResource Label1}"/>
+        <Label Text="{Binding Driver.Surname}" Style="{StaticResource Label1}"/>
+        <Label Text="{Binding Driver.BirthYear}" Style="{StaticResource Label1}"/>
+        <Label Text="{Binding Driver.Document}" Style="{StaticResource Label1}"/>
+        <Label Text="{Binding Driver.Expiration}" Style="{StaticResource Label1}"/>
+        <Label Text="{Binding Driver.Adress}" Style="{StaticResource Label1}"/>
+        <Label Text="{Binding Driver.Phone}" Style="{StaticResource Label1}"/>
     </StackLayout>
 </ContentPage>
