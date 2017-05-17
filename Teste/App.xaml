@@ -27,6 +27,24 @@
             <Style  x:Key="Date1" TargetType="DatePicker">
                 <Setter Property="VerticalOptions" Value="Center"/>
             </Style>
+            <Style  x:Key="Switch1" TargetType="Switch">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+            <Style  x:Key="EntryText1" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small" />
+            </Style>
+            <Style  x:Key="EntryNum1" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+            <Style  x:Key="EntryPhone1" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="Keyboard" Value="Telephone"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

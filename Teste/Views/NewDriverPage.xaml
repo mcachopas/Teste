@@ -11,11 +11,11 @@
             <StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Name" Style="{StaticResource Label1}"/>
-                    <Entry Text="{Binding Driver.Name}"  FontSize="Small" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Driver.Name}" Style="{StaticResource EntryText1}"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Surname" Style="{StaticResource Label1}"/>
-                    <Entry Text="{Binding Driver.Surname}" FontSize="Small" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Driver.Surname}" Style="{StaticResource EntryText1}"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="BirthYear" Style="{StaticResource Label1}"/>
@@ -23,7 +23,7 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Document" Style="{StaticResource Label1}"/>
-                    <Entry Text="{Binding Driver.Document}" FontSize="Small" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Driver.Document}" Style="{StaticResource EntryText1}"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Expiration" Style="{StaticResource Label1}"/>
@@ -31,11 +31,11 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Adress" Style="{StaticResource Label1}"/>
-                    <Entry Text="{Binding Driver.Adress}" FontSize="Small" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Driver.Adress}" Style="{StaticResource EntryText1}"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Phone" Style="{StaticResource Label1}"/>
-                    <Entry Text="{Binding Driver.Phone}" Keyboard="Telephone"  FontSize="Small" VerticalOptions="Center"/>
+                    <Entry Text="{Binding Driver.Phone}" Style="{StaticResource EntryPhone1}"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

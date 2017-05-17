@@ -9,49 +9,61 @@
         <StackLayout Spacing="20" Padding="15">
             <StackLayout Orientation="Horizontal" >
                 <Label Text="Date" Style="{StaticResource Label1}"/>
-                <DatePicker Date="{Binding TruckRepair.Date}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <DatePicker Date="{Binding TruckRepair.Date}" Style="{StaticResource Date1}"/>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="KM" Style="{StaticResource Label1}"/>
-                <Entry Text="{Binding TruckRepair.KM}" FontSize="Small" Keyboard="Numeric" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Entry Text="{Binding TruckRepair.KM}" Style="{StaticResource EntryNum1}"/>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="Price" Style="{StaticResource Label1}"/>
-                <Entry Text="{Binding TruckRepair.Price}" FontSize="Small" Keyboard="Numeric" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Entry Text="{Binding TruckRepair.Price}" Style="{StaticResource EntryNum1}"/>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="OilFilter" Style="{StaticResource Label1}"/>
-                <Switch IsToggled="{Binding TruckRepair.OilFilter}" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding TruckRepair.OilFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="DieselFilter" Style="{StaticResource Label1}"/>
-                <Switch IsToggled="{Binding TruckRepair.DieselFilter}" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding TruckRepair.DieselFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="AirFilter" Style="{StaticResource Label1}"/>
-                <Switch IsToggled="{Binding TruckRepair.AirFilter}" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding TruckRepair.AirFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="MotorFilter" Style="{StaticResource Label1}"/>
-                <Switch IsToggled="{Binding TruckRepair.MotorFilter}" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding TruckRepair.MotorFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="Breaks" Style="{StaticResource Label1}"/>
-                <Entry Text="{Binding TruckRepair.Breaks}" FontSize="Small" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Label Text="Pessimo" Style="{StaticResource Label2}"/>
+                <Slider Value="{Binding TruckRepair.Breaks}" Style="{StaticResource Slider1}"/>
+                <Label Text="Otimo" Style="{StaticResource Label2}"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Repairs" Style="{StaticResource Label1}"/>
-                <Entry Text="{Binding TruckRepair.Repairs}" FontSize="Small" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-            </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Label Text="TiresCondition %" Style="{StaticResource Label1}"/>
                 <Label Text="Pessimo" Style="{StaticResource Label2}"/>
-                <Slider HorizontalOptions="FillAndExpand" VerticalOptions="Center" Value="{Binding TruckRepair.TiresCondition}"/>
+                <Slider Value="{Binding TruckRepair.TiresCondition}" Style="{StaticResource Slider1}"/>
                 <Label Text="Otimo" Style="{StaticResource Label2}"/>
             </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Repairs" Style="{StaticResource Label1}"/>
+                <Entry Text="{Binding TruckRepair.Repairs}" Style="{StaticResource EntryText1}"/>
+            </StackLayout>
+            
             <StackLayout Orientation="Vertical">
                 <Label Text="Obs" Style="{StaticResource Label1}"/>
-                <Entry Text="{Binding TruckRepair.Obs}" FontSize="Small" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Entry Text="{Binding TruckRepair.Obs}" Style="{StaticResource EntryText1}"/>
             </StackLayout>
         </StackLayout>
     </ScrollView>
