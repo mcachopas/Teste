@@ -11,56 +11,56 @@
                 <Label Text="Date" Style="{StaticResource Label1}"/>
                 <DatePicker Date="{Binding TruckRepair.Date}" Style="{StaticResource Date1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="KM" Style="{StaticResource Label1}"/>
                 <Entry Text="{Binding TruckRepair.KM}" Style="{StaticResource EntryNum1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="Price" Style="{StaticResource Label1}"/>
                 <Entry Text="{Binding TruckRepair.Price}" Style="{StaticResource EntryNum1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="OilFilter" Style="{StaticResource Label1}"/>
                 <Switch IsToggled="{Binding TruckRepair.OilFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="DieselFilter" Style="{StaticResource Label1}"/>
                 <Switch IsToggled="{Binding TruckRepair.DieselFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="AirFilter" Style="{StaticResource Label1}"/>
                 <Switch IsToggled="{Binding TruckRepair.AirFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="MotorFilter" Style="{StaticResource Label1}"/>
                 <Switch IsToggled="{Binding TruckRepair.MotorFilter}" Style="{StaticResource Switch1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="Breaks" Style="{StaticResource Label1}"/>
                 <Label Text="Pessimo" Style="{StaticResource Label2}"/>
                 <Slider Value="{Binding TruckRepair.Breaks}" Style="{StaticResource Slider1}"/>
                 <Label Text="Otimo" Style="{StaticResource Label2}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="TiresCondition %" Style="{StaticResource Label1}"/>
                 <Label Text="Pessimo" Style="{StaticResource Label2}"/>
                 <Slider Value="{Binding TruckRepair.TiresCondition}" Style="{StaticResource Slider1}"/>
                 <Label Text="Otimo" Style="{StaticResource Label2}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="Repairs" Style="{StaticResource Label1}"/>
                 <Entry Text="{Binding TruckRepair.Repairs}" Style="{StaticResource EntryText1}"/>
             </StackLayout>
-            
+
             <StackLayout Orientation="Vertical">
                 <Label Text="Obs" Style="{StaticResource Label1}"/>
                 <Entry Text="{Binding TruckRepair.Obs}" Style="{StaticResource EntryText1}"/>
